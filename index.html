@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chebrolu Keerthi Priya's Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Custom styles */
+        .highlight {
+            animation: pop 0.3s ease-in-out;
+        }
+
+        @keyframes pop {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-white">
+
+    <!-- Navigation Bar -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#home" class="text-xl font-bold">Portfolio</a>
+            <ul class="flex space-x-4">
+                <li><a href="#home" class="hover:text-yellow-400">Home</a></li>
+                <li><a href="#about" class="hover:text-yellow-400">About Me</a></li>
+                <li><a href="skills.html" class="hover:text-yellow-400">Skills</a></li>
+                <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
+                <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-gray-900 to-gray-800 text-white text-center p-8">
+        <h1 class="text-4xl md:text-6xl font-bold leading-tight mb-4 transition duration-300 ease-in-out hover:scale-105">
+            Hello, I'm <span class="text-yellow-400">Chebrolu Keerthi Priya</span>
+        </h1>
+        <p class="text-lg md:text-xl mb-6">
+            I am a B.Tech 3rd-year student at Christ University, passionate about Web Development and excited to build innovative solutions.
+        </p>
+        <a href="#projects" class="bg-gray-400 text-gray-900 px-6 py-3 rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-yellow-500">
+            View My Projects
+        </a>
+        <div class="mt-8">
+            <h2 class="text-2xl md:text-3xl font-semibold">Skills & Technologies</h2>
+            <div class="flex justify-center flex-wrap mt-4 space-x-4">
+                <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">HTML</span>
+                <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">CSS</span>
+                <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">JavaScript</span>
+                <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">Python</span>
+                <span class="bg-gray-700 px-3 py-1 rounded-full text-sm">C++</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-gray-800 text-center">
+        <h2 class="text-3xl font-bold mb-6">About Me</h2>
+        <p class="text-lg mx-auto max-w-2xl">
+            I am a dedicated and motivated B.Tech student specializing in Computer Science Engineering. My interests include web development, software engineering, and machine learning. I love working on innovative projects and continually improving my skills. In addition to my technical skills, I am fluent in English and enjoy collaborating with others to create efficient solutions.
+        </p>
+        <p class="mt-4">In my free time, I enjoy reading, coding personal projects, and exploring new technologies!</p>
+    </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20">
+    <h2 class="text-3xl font-bold text-center mb-6">My Projects</h2>
+    <p class="text-lg text-center max-w-2xl mx-auto mb-4">Here are some of the projects I've worked on:</p>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold">Project 1: EleganceCloth</h3>
+            <p class="mt-2">An eCommerce website for clothing, featuring user-friendly design and functionality.</p>
+            <a href="http://127.0.0.1:5501/shopus-html-bootstrap/HTML%20Code/index.html" target="_blank" class="text-blue-500 hover:underline">View Project</a>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold">Project 2: Data Dashboard</h3>
+            <p class="mt-2">A dashboard for data visualization that helps users understand complex datasets.</p>
+            <a href="https://link-to-datadashboard.com" target="_blank" class="text-blue-500 hover:underline">View Project</a>
+        </div>
+        <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-semibold">Project 3: Personal Blog</h3>
+            <p class="mt-2">A blogging platform where I share my thoughts on technology and development.</p>
+            <a href="https://link-to-personalblog.com" target="_blank" class="text-blue-500 hover:underline">View Project</a>
+        </div>
+    </div>
+</section>
+>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-800 text-center">
+        <h2 class="text-3xl font-bold mb-6">Contact Me</h2>
+        <p class="mb-4">I'm looking forward to connecting with you!</p>
+        <form id="contact-form" class="max-w-md mx-auto">
+            <input type="text" id="name" placeholder="Your Name" class="w-full p-2 mb-4 rounded" required>
+            <input type="email" id="email" placeholder="Your Email" class="w-full p-2 mb-4 rounded" required>
+            <textarea id="message" rows="4" placeholder="Your Message" class="w-full p-2 mb-4 rounded" required></textarea>
+            <button type="submit" class="bg-yellow-400 text-gray-900 px-6 py-3 rounded-lg shadow-lg transition duration-300 ease-in-out hover:bg-yellow-500">
+                Send Message
+            </button>
+        </form>
+        <p id="response-message" class="hidden mt-4 text-yellow-400"></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-900 text-center p-4">
+        <p>&copy; 2024 Chebrolu Keerthi Priya. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
